@@ -1,7 +1,7 @@
-img {
-    
+body {
+    background-color: #d8cd5185;
 }
 
-body {
-    background-color: #80808085;
+fieldset {
+    text-align: center;
 }
