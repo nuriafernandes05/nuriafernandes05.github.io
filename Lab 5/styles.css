@@ -1,0 +1,243 @@
+body {
+    background-color: #9d939d2a;
+}
+
+header {
+
+    background-color: #8f409585;
+    text-align: center;
+
+}
+
+nav {
+    background-color: #4a1b4d64;
+
+}
+
+main {
+
+    background-color: #8f409585;
+    text-align: center;
+
+}
+
+footer {
+
+    background-color: #4a1b4d64;
+    text-align: center;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* espaço entre as imagens */
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    display: inline-block;
+    margin: 0 5px; /* Ajuste de espaçamento horizontal entre as imagens */
+}
+
+nav a:hover {
+    background-color: #e1b7dc;
+    color: black;
+}
+
+#fotografias h3, #video h3, #poema h3 {
+    color: #4CAF50;
+    font-size: 24px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.multimedia {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 100px;
+    border-radius: 40px;
+    background-color: rgb(241, 213, 237);
+    color: purple;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+}
+
+/*As fotos da multimedia esta no meio*/
+.multimedia-container {
+    display: flex;
+    justify-content: center; /* Centraliza as divs das imagens */
+    gap: 20px; /* Espaço entre as imagens */
+    margin-bottom: 20px; /* Espaço abaixo das imagens */
+}
+
+.multimedia {
+    text-align: center; /* Centraliza o texto abaixo de cada imagem */
+}
+
+.multimedia img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem o container */
+    height: auto; /* Mantém a proporção da imagem */
+    cursor: zoom-in;
+}
+
+h2 {
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+.pontosinteresse {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 100px;
+    border-radius: 40px;
+    background-color: rgb(241, 213, 237);
+    color: purple;
+    text-align: center;
+    width: 670px;
+    height: 170px;
+}
+.pontosinteresse {
+    text-align: center; /* Centraliza o texto abaixo de cada imagem */
+}
+.Restaurantes {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 100px;
+    border-radius: 40px;
+    background-color: rgb(241, 213, 237);
+    color: black;
+    text-align: center;
+    width: 670px;
+    height: 170px;
+    font-size: 16px;
+
+}
+.Restaurantes ul {
+    font-size: 200%; /* Tamanho da fonte do elemento da lista é o dobro do tamanho do pai */
+}
+
+.Restaurantes li {
+    font-size: inherit; /* Mantém o tamanho da fonte do elemento pai */
+}
+.Restaurantes h3 {
+    color: purple
+}
+.Monumentos {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 100px;
+    border-radius: 40px;
+    background-color: rgb(241, 213, 237);
+    color: black;
+    text-align: center;
+    width: 670px;
+    height: 170px;
+    font-size: 16px;
+}
+.Monumentos ul {
+    font-size: 200%; /* Tamanho da fonte do elemento da lista é o dobro do tamanho do pai */
+}
+
+.Monumentos li {
+    font-size: inherit; /* Mantém o tamanho da fonte do elemento pai */
+}
+.Monumentos h3 {
+    color: purple
+}
+
+li:nth-child(even) {background-color:  rgb(204, 173, 199);}
+li:nth-child(odd) {background-color:  rgb(255, 224, 250);}
+
+.localfotos {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 100px;
+    border-radius: 40px;
+    background-color: rgb(241, 213, 237);
+    color: purple;
+    text-align: center;
+    width: 624px;
+    height: 428px;
+}
+
+.Tabela {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 100px;
+    border-radius: 40px;
+    background-color: rgb(241, 213, 237);
+    color: black;
+    text-align: center;
+    width: 670px;
+    height: 521px;
+
+}
+.Tabela h3 {
+    color: purple
+}
+tr:nth-child(even) {background-color:  rgb(204, 173, 199);}
+tr:nth-child(odd) {background-color:  rgb(255, 224, 250);}
+
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Espaçamento geral entre os elementos */
+section {
+    padding: 20px; /* Espaçamento interno da seção */
+}
+
+/* Define espaço abaixo de cada parágrafo */
+p {
+    margin-bottom: 20px; /* Espaço entre os parágrafos */
+}
+
+/* Espaçamento entre os blocos de multimídia */
+.multimedia {
+    margin-bottom: 30px; /* Espaçamento entre as divs de cada imagem */
+}
+
+
+/* Para ajustar o espaçamento entre títulos e outros elementos */
+h3 {
+    margin-bottom: 20px; /* Espaçamento entre o título e o conteúdo seguinte */
+}
+
+
+.poema {
+    font-family: 'Georgia', serif; /* Fonte clássica */
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.0; /* Espaçamento entre as linhas */
+    white-space: pre-line; /* Preserva as quebras de linha do texto */
+    max-width: 600px; /* Limita a largura do poema */
+    margin-left: 0; /* Remove a margem esquerda */
+    margin-right: auto; /* Garante que o lado direito seja automático */
+    margin-top: 20px; /* Margem superior */
+    margin-bottom: 20px; /* Margem inferior */
+    padding-left: 20px; /* Adiciona um pouco de espaço interno à esquerda (opcional) */
+}
+
+.poema p {
+    margin-bottom: 20px; /* Espaço entre as estrofes */
+}

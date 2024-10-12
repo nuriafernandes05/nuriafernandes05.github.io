@@ -1,0 +1,53 @@
+* {
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box; /* Medidas são tomadas da borda */
+}
+
+nav a:last-child {
+    margin-left: auto;
+}
+
+header {
+    height: 10vh; 
+    background: #8f409585;
+    color: white;
+    top: 0;  
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+nav a {
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: #9d939d2a;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic; /* Ponto e vírgula adicionado */
+}
+
+.foto {
+    width: 100vw;
+}
+
+.texto {
+    position: absolute; 
+    bottom: 0px; 
+    right: 20px;
+ }
