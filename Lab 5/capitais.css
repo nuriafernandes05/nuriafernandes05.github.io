@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    
 }
 
 header {
@@ -13,7 +14,7 @@ header {
     top: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #333; /* Cor de fundo do cabeçalho */
+    background-color: #8f409585;
     color: white;
     padding: 10px 20px;
 }
@@ -25,7 +26,7 @@ nav a {
 }
 
 nav a:last-child {
-    background-color: #555; 
+    background-color: #723a80; 
 }
 
 nav a:link {
@@ -53,7 +54,7 @@ nav a:active {
     text-align: center;
 }
 
-.poema-conteudo {
+.conteudo-poema {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,12 +80,15 @@ nav a:active {
 .poema i {
     font-size: 1.2rem; /* tamanho da fonte menor para o autor */
     font-weight: normal; /* remove o negrito do nome do autor */
+    text-align: center;
+
 }
-.poeta {
+.autor {
+    text-align: center;
     font-size: 1.2em;
     font-style: italic;
     font-weight: normal;
-    color: #555; 
+    color: #371138; 
 }
 
 body {
@@ -97,50 +101,39 @@ body {
     margin: 20px 0;
 }
 
-
 #cidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-rows: repeat(4, auto);   /* 4 linhas */
+    gap: 20px; /* Espaço entre os itens */
+    justify-items: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.capital {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Espaça as colunas uniformemente */
-    padding: 20px;
-    background-color: #f0f0f0;
+    flex-direction: row; /* Alinha a imagem e o texto lado a lado */
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 0;
+    background-color: rgb(249, 239, 248); /* Cor de fundo conforme sua classe .capital */
+    border-radius: 40px; /* Bordas arredondadas */
+    width: 300px; /* Ajusta a largura para acomodar imagem e texto lado a lado */
+    height: auto;
 }
 
-
-#cidades section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-basis: calc(25% - 10px); /* Cada secção ocupa 25% da largura, subtraindo margens */
-    margin-bottom: 20px; /* Espaçamento vertical entre as linhas */
-    margin-right: 10px; /* Espaçamento horizontal entre as colunas */
-    box-sizing: border-box; /* Inclui margens e preenchimento na largura */
+section img {
+    border-radius: 40px 0 0 40px; /* Apenas os cantos esquerdos arredondados */
+    width: 150px; /* Define uma largura fixa para a imagem */
+    height: 100%; /* A imagem ocupa 100% da altura da section */
+    margin: 0; /* Remove qualquer espaço extra */
 }
 
-
-#cidades img {
-    width: 132px;
-    height: 88px;
-    border-radius: 15px 15px 0 0; 
-}
-
-
-#cidades div {
-    width: 132px;
-    text-align: center;
-    background-color: #e0e0e0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px; 
-    border-radius: 0 0 15px 15px; 
-    transition: background-color 0.3s ease;
-}
-
-
-#cidades div:hover {
-    background-color: #d0d0d0;
+section div {
+    color: purple; /* Cor do texto */
+    font-size: 1.2rem;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 15px; /* Adiciona espaço à esquerda do texto */
 }
 
 #experimenta {
