@@ -1,53 +1,212 @@
 * {
     margin: 0;  
     padding: 0;  
-    box-sizing: border-box; /* Medidas são tomadas da borda */
+    box-sizing: border-box; /* medidas são tomadas da borda */
 }
 
-nav a:last-child {
-    margin-left: auto;
+body {
+    font-family: Arial, sans-serif;
 }
 
 header {
-    height: 10vh; 
-    background: #8f409585;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333; /* Cor de fundo do cabeçalho */
     color: white;
-    top: 0;  
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;
-}
-
-header nav {
-    display: flex;
-    justify-content: flex-end;  
+    padding: 10px 20px;
 }
 
 nav a {
-    padding: 0 1em;
+    padding: 20px;
     text-decoration: none;
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
-div {
+nav a:last-child {
+    background-color: #555; 
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: #ccc;
+}
+
+nav a:hover {
+    color: rgb(21, 9, 138);
+}
+
+nav a:active {
+    color: rgb(63, 189, 100);
+}
+
+.poema-article {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 50vh;
-    width: 100vw;
-    background-color: #9d939d2a;
-    font-size: 2rem;
+    text-align: center;
+}
+
+.poema-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* tamanho da fonte */
+    font-weight: bold; /* texto em negrito */
+    font-style: italic; /* texto em itálico */
+    padding: 20px; /* espaçamento interno */
+    margin: 0 auto; /* centraliza horizontalmente */
+    max-width: 800px; /* largura máxima */
+    width: 100%; /* largura completa */
+    box-sizing: border-box;
+    text-align: center; /* centraliza o texto */
+    white-space: pre-line; /* preserva as quebras de linha */
+}
+.poema i {
+    font-size: 1.2rem; /* tamanho da fonte menor para o autor */
+    font-weight: normal; /* remove o negrito do nome do autor */
+}
+.poeta {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: normal;
+    color: #555; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6c8ef; 
+}
+
+#paisagem {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+#cidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaça as colunas uniformemente */
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+
+#cidades section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(25% - 10px); /* Cada secção ocupa 25% da largura, subtraindo margens */
+    margin-bottom: 20px; /* Espaçamento vertical entre as linhas */
+    margin-right: 10px; /* Espaçamento horizontal entre as colunas */
+    box-sizing: border-box; /* Inclui margens e preenchimento na largura */
+}
+
+
+#cidades img {
+    width: 132px;
+    height: 88px;
+    border-radius: 15px 15px 0 0; 
+}
+
+
+#cidades div {
+    width: 132px;
+    text-align: center;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; 
+    border-radius: 0 0 15px 15px; 
+    transition: background-color 0.3s ease;
+}
+
+
+#cidades div:hover {
+    background-color: #d0d0d0;
+}
+
+#experimenta {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+.circulo-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 50%; /* Torna o quadrado num círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     font-weight: bold;
-    font-style: italic; /* Ponto e vírgula adicionado */
+    font-size: 1.2em;
 }
 
-.foto {
-    width: 100vw;
+
+.hover-container {
+    margin: 30px 0;
 }
 
-.texto {
-    position: absolute; 
-    bottom: 0px; 
-    right: 20px;
- }
+.esconde-message {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.hover-revela {
+    display: none;
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+
+.hover-container:hover .hover-revela {
+    display: block;
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.icon-container i {
+    font-size: 2em;
+    color: #333;
+    transition: color 0.3s;
+}
+
+
+.icon-container i:hover {
+    color: #4CAF50;
+}
