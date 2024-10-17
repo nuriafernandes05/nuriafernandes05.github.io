@@ -1,7 +1,9 @@
 body {
     background-color: #9d939d2a;
 }
-
+* {
+    font-family: 'Afacad Flux', sans-serif; /* ou outra fonte Google que escolher */
+}
 header {
 
     background-color: #8f409585;
@@ -10,24 +12,47 @@ header {
 }
 
 nav {
-    background-color: #4a1b4d64;
-
+    background-color: #4a1b4d64; /* Cor de fundo do nav */
+    text-decoration: none;
+    display: flex; /* Alinha os links horizontalmente */
+    justify-content: space-around; /* Distribui os links uniformemente */
+    padding: 10px 0; /* Espaçamento vertical do nav */
+    font-size: 1.2rem; /* Aumente o tamanho da fonte aqui */
 }
+
+nav a {
+    color: #4a1b4d; /* Cor padrão para links */
+    padding: 10px 15px; /* Espaço interno para o link */
+    border-radius: 5px; /* Bordas arredondadas para os links */
+    transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+nav a:link {
+    color: #250e27; /* Cor para links não visitados */
+}
+
+nav a:visited {
+    color: #623265; /* Cor para links visitados */
+}
+
+nav a:hover {
+    background-color: rgba(233, 189, 233, 0.6); /* Cor de fundo ao passar o mouse */
+    color: #4a1b4d; /* Mantém a cor do texto ao passar o mouse */
+}
+
 
 main {
-
     background-color: #8f409585;
-    text-align: center;
-
 }
-
+main h2 {
+    text-align: center; /* Centraliza o texto do h2 */
+}
 footer {
 
     background-color: #4a1b4d64;
     text-align: center;
 
 }
-
 .image-container {
     display: flex;
     justify-content: center;
@@ -43,12 +68,6 @@ footer {
     display: inline-block;
     margin: 0 5px; /* Ajuste de espaçamento horizontal entre as imagens */
 }
-
-nav a:hover {
-    background-color: #e1b7dc;
-    color: black;
-}
-
 #fotografias h3, #video h3, #poema h3 {
     color: #4CAF50;
     font-size: 24px;
@@ -56,7 +75,6 @@ nav a:hover {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-
 .multimedia {
     display: inline-block;
     margin: 10px;
@@ -87,7 +105,9 @@ nav a:hover {
     height: auto; /* Mantém a proporção da imagem */
     cursor: zoom-in;
 }
-
+.multimedia a {
+    cursor: zoom-in; /* Altera o cursor para zoom-in ao passar sobre o link */
+}
 h2 {
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
 }
