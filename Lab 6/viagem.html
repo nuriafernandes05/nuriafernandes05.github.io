@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viagem</title>
+        <link rel="stylesheet" href="styles.css"  /link>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            * {box-sizing: border-box;}
+            </style>
+    </head>
+
+    <body>
+        <header>
+            <h2>Viagem</h2>
+
+        </header>
+      
+        <nav>
+                
+            <ul>
+                <a href="index.html"><i class="fas fa-home"></i>  Home</a>
+                <a href="local.html"><i class="fas fa-map-marker-alt"></i>  Localização</a>
+                <a href="multimedia.html"><i class="fas fa-image"></i>  Multimédia</a>
+                <a href="info.html"><i class="fas fa-info-circle"></i>  Informação</a>
+                <a href="quizz.html"><i class="fas fa-question-circle"></i>  Quizz</a>
+                <a href="viagem.html"><i class="fas fa-plane"></i>  Viagem</a>
+                <a href="pontosinteresse.html"><i class="fas fa-star"></i>  Pontos de Interesse</a>
+                <a href="capitais.html"><i class="fas fa-globe"></i>  Capitais</a>
+            </ul>
+                
+        </nav>
+  
+        <form method="get" action="https://postman-echo.com/get">
+            <fieldset action="/quizz.html" autocomplete="on">
+                <legend>Identificação</legend> 
+                
+               <label for="fname">Nome:</label>
+               <input type="text" id="fname" name="nome" required autofocus>
+ 
+               <label for="lname">Apelido: </label>
+               <input type="text" id="lname" name="apelido" required>
+ 
+               <label>Email: </label>
+               <input type="email" placeholder="Insira o seu email." name="nome" autocomplete="off">
+ 
+             </fieldset>
+              <br>
+              <br>
+
+       
+             <label>Data de partida: </label>
+              <input type="date" placeholder="Insira a data de partida" name="partida">
+
+                <br>
+
+              <label>Data de regresso: </label>
+              <input type="date" placeholder="Insira a data de regresso" name="regresso">
+
+                <br>
+                <br>
+
+              <label for="numero">Números de passageiros: </label>
+              <input type="number" id="numero" name="numero">
+
+              <br>
+              <br>
+
+              <label for="transportes">Qual é o seu meio de transporte favorito?</label>
+              <select id="transportes" name="transportes" size="2">
+                  <option value="carro">Carro</option>
+                  <option value="comboio">Comboio</option>
+                  <option value="avião">Avião</option>
+                  <option value="outros">Outros</option>
+              </select>
+
+            <br>
+            <label for="resposta">Se na pergunta anterior escolheu "Outros" então especifique a sua resposta.</label>
+            <input type="text" id="resposta" placeholder="Insira a sua resposta." name="resposta1" maxlength="20"> 
+
+            <br>
+            <br>
+
+            
+            <label for="selecao">Qual o serviço que deseja na sua viagem: básico ou premium?</label>
+                <input type="radio" id="basico" name="basico" value="Basico">
+                <label for="basico">Básico</label>
+
+                <input type="radio" id="premium" name="premium" value="Premium">
+                <label for="premium">Premium</label>
+
+                <br>
+                <br>
+
+                <label for="resposta2">Pedidos especiais:</label>
+                <br>
+                <textarea name="message" style="width:200px; height:40px;" placeholder="Escreva o seu pedido aqui."></textarea>
+
+                <br>
+                <br>
+
+                <label for="numero">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
+                <input type="number" id="numero" name="numero">
+
+                <br>
+                <br>
+
+                <img src="images/passeio-de-barco-pelo-sena-paris.jpg" alt="Viagem para paris">
+                <p>Faça uma boa viagem!</p>
+                
+                <br>
+                <br>
+
+                <footer>
+                    <input type="submit" name="Submit">
+                    <input type="reset" name="Reset">
+                </footer>
+
+        </form>
+    </body>
+
+    <aside></aside>
+
+    <footer>
+        <p>DIW 2024</p>
+    </footer>
+    
+</html>
