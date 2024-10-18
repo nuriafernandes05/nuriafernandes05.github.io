@@ -5,6 +5,7 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Multimédia</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="responsive.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <style>
@@ -18,9 +19,12 @@
             <h2>Multimédia</h2>
 
             <p>
-                <a href="#fotografias">Fotografias</a>
+                <nav>
+                 <a href="#fotografias">Fotografias</a>
                 <a href="#video">Vídeo</a>
-                <a href="#poema">Poema</a>
+                <a href="#poema">Poema</a>   
+                </nav>
+                
             </p> 
 
         </header>
@@ -39,10 +43,16 @@
                 
             </nav>
             
-        <section>
-            <h3 style=" color: purple">Fotografias</h3>
+    
+
+        <main>    
+
+            <section id="fotografias">
+                  <div class="fotografias-multimedia">
+              <h3 style=" color: purple">Fotografias</h3>
         
             <div class="multimedia-container">
+
                 <div class="multimedia">
                     <a href="images/ponte_grande.jpg" target="_blank">
                         <img src="images/ponte_pequena.jpg" alt="Ponte">
@@ -63,29 +73,35 @@
                     </a>  
                     <p>Figura 3 - Torre</p>
                 </div>
-            </div>
-        </section>
+
+            </div>        
+
+        </div> 
+            </section>
      
+      <section id="video">
+          <div class="video-multimedia">
+            <h3 style=" color: purple">Vídeo</h3>
 
-        <h3 style=" color: purple">Vídeo</h3>
-
-        <main>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/REDVbTQxMXo?si=T31EZCRDFMtc_
             lDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
              encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross
-             -origin" allowfullscreen></iframe>
-        </main>
-
-        <h3 style=" color: purple">Poema</h3>
-
-    
-        <h4 style=" color: purple">Paris: Encanto Eterno nas Margens do Sena</h2>
-
-            <section>
-                <h3>Paris: Encanto Eterno nas Margens do Sena</h3>
+             -origin" allowfullscreen>
+            </iframe>
+        </div>
+      </section>
+      
+      <section id="poema">
+         <div class="poema-multimedia">
+            <h3 style=" color: purple">Poema</h3>
+              
+            <h4 style=" color: purple">Paris: Encanto Eterno nas Margens do Sena</h2>
+                
             
-                <div class="poema">
-                    <p>
+            <h3>Paris: Encanto Eterno nas Margens do Sena</h3>
+            
+                
+            <p>
                         Entre ruas antigas, nas margens do Sena,
             
                         Paris se ergue, eterna e serena.
@@ -93,9 +109,9 @@
                         Com pontes que ligam histórias a sonhos,
             
                         E o vento que traz murmúrios risonhos.
-                    </p>
+            </p>
             
-                    <p>
+            <p>
                         Sob a Torre que ao céu se inclina,
             
                         Caminha a cidade, elegante e divina.
@@ -103,9 +119,9 @@
                         Nos cafés, a vida em conversas suaves,
             
                         Nas artes, beleza que nunca se esvanece.
-                    </p>
+            </p>
             
-                    <p>
+            <p>
                         Oh, Paris, dos amantes, dos poetas também,
             
                         És palco de amores e canções que vêm.
@@ -113,9 +129,14 @@
                         No brilho das luzes, a alma se aquece,
             
                         E em teu encanto, o mundo adormece.
-                    </p>
-                </div>
-            </section>
+            </p>
+        </div>
+      </section>
+          
+         
+    </main>
+
+       
 
         <aside></aside>  
 

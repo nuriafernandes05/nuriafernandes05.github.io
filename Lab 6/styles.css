@@ -25,6 +25,7 @@ nav a {
     padding: 10px 15px; /* Espaço interno para o link */
     border-radius: 5px; /* Bordas arredondadas para os links */
     transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+    text-decoration: none;
 }
 
 nav a:link {
@@ -42,7 +43,7 @@ nav a:hover {
 
 
 main {
-    background-color: #8f409585;
+    text-align: center;
 }
 main h2 {
     text-align: center; /* Centraliza o texto do h2 */
@@ -107,6 +108,22 @@ footer {
 }
 .multimedia a {
     cursor: zoom-in; /* Altera o cursor para zoom-in ao passar sobre o link */
+}
+.fotografias-multimedia {
+    background-color: #8f409585;
+    height: 240px;
+    margin-bottom: 35px;
+}
+.video-multimedia {
+    background-color: #8f409585;
+    height: 3794x;
+    margin-bottom: 35px;
+}
+.poema-multimedia {
+    text-align: center;
+    background-color: #8f409585;
+    height: 3794x;
+    margin-bottom: 35px;
 }
 h2 {
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
