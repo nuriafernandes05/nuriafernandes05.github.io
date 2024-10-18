@@ -13,7 +13,7 @@
             </style>
     </head>
 
-    <body>
+    <body class="formularios">
         <header>
             <h2>Viagem</h2>
 
@@ -35,41 +35,39 @@
         </nav>
   
         <form method="get" action="https://postman-echo.com/get">
+
             <fieldset action="/quizz.html" autocomplete="on">
                 <legend>Identificação</legend> 
                 
-               <label for="fname">Nome:</label>
+               <label for="fname" class="negrito">Nome:</label>
                <input type="text" id="fname" name="nome" required autofocus>
  
-               <label for="lname">Apelido: </label>
+               <label for="lname" class="negrito">Apelido: </label>
                <input type="text" id="lname" name="apelido" required>
  
-               <label>Email: </label>
+               <label class="negrito">Email: </label>
                <input type="email" placeholder="Insira o seu email." name="nome" autocomplete="off">
  
-             </fieldset>
-              <br>
-              <br>
+            </fieldset>
 
+              <br>
        
-             <label>Data de partida: </label>
+             <label class="negrito">Data de partida: </label>
               <input type="date" placeholder="Insira a data de partida" name="partida">
 
                 <br>
 
-              <label>Data de regresso: </label>
+              <label class="negrito">Data de regresso: </label>
               <input type="date" placeholder="Insira a data de regresso" name="regresso">
 
                 <br>
-                <br>
 
-              <label for="numero">Números de passageiros: </label>
+              <label for="numero" class="negrito">Números de passageiros: </label>
               <input type="number" id="numero" name="numero">
 
               <br>
-              <br>
 
-              <label for="transportes">Qual é o seu meio de transporte favorito?</label>
+              <label for="transportes" class="negrito">Qual é o seu meio de transporte favorito?</label>
               <select id="transportes" name="transportes" size="2">
                   <option value="carro">Carro</option>
                   <option value="comboio">Comboio</option>
@@ -78,14 +76,14 @@
               </select>
 
             <br>
-            <label for="resposta">Se na pergunta anterior escolheu "Outros" então especifique a sua resposta.</label>
+            <br>
+
+            <label for="resposta" class="negrito">Se na pergunta anterior escolheu "Outros" então especifique a sua resposta.</label>
             <input type="text" id="resposta" placeholder="Insira a sua resposta." name="resposta1" maxlength="20"> 
 
             <br>
-            <br>
-
-            
-            <label for="selecao">Qual o serviço que deseja na sua viagem: básico ou premium?</label>
+               
+            <label for="selecao" class="negrito">Qual o serviço que deseja na sua viagem: básico ou premium?</label>
                 <input type="radio" id="basico" name="basico" value="Basico">
                 <label for="basico">Básico</label>
 
@@ -93,27 +91,22 @@
                 <label for="premium">Premium</label>
 
                 <br>
-                <br>
 
-                <label for="resposta2">Pedidos especiais:</label>
+                <label for="resposta2" class="negrito">Pedidos especiais:</label>
                 <br>
                 <textarea name="message" style="width:200px; height:40px;" placeholder="Escreva o seu pedido aqui."></textarea>
 
                 <br>
-                <br>
 
-                <label for="numero">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
+                <label for="numero" class="negrito">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
                 <input type="number" id="numero" name="numero">
 
-                <br>
                 <br>
 
                 <img src="images/passeio-de-barco-pelo-sena-paris.jpg" alt="Viagem para paris">
                 <p>Faça uma boa viagem!</p>
                 
-                <br>
-                <br>
-
+             
                 <footer>
                     <input type="submit" name="Submit">
                     <input type="reset" name="Reset">

@@ -20,7 +20,13 @@
         font-size: 30px;
         padding: 10px;
     }
-
+    .formularios nav{
+        height: 100px;
+       
+    }
+    .formularios nav a {
+        padding: 18px; /* Adiciona espaçamento interno nos links */
+    }
     * {
         box-sizing: border-box;
         padding: 0;

@@ -52,7 +52,10 @@ footer {
 
     background-color: #4a1b4d64;
     text-align: center;
-
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 10px;
 }
 .image-container {
     display: flex;
@@ -70,9 +73,7 @@ footer {
     margin: 0 5px; /* Ajuste de espaçamento horizontal entre as imagens */
 }
 #fotografias h3, #video h3, #poema h3 {
-    color: #4CAF50;
     font-size: 24px;
-    border-bottom: 2px solid #4CAF50;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -127,6 +128,13 @@ footer {
 }
 h2 {
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+.form {
+    margin: 10px;
+    margin-bottom: 0;
+}
+.negrito {
+    font-weight: bold;
 }
 .pontosinteresse {
     display: inline-block;
