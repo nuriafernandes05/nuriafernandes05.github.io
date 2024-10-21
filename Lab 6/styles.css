@@ -8,6 +8,7 @@ header {
 
     background-color: #8f409585;
     text-align: center;
+    height: 100px;
 
 }
 
@@ -18,12 +19,13 @@ nav {
     justify-content: space-around; /* Distribui os links uniformemente */
     padding: 10px 20px; /* Espaçamento vertical do nav */
     font-size: 1.2rem; /* Aumente o tamanho da fonte aqui */
+    height: 100%;
 }
 
 nav a {
     color: #4a1b4d; /* Cor padrão para links */
     padding: 20px 15px; /* Espaço interno para o link */
-    border-radius: 5px; /* Bordas arredondadas para os links */
+    border-radius: auto; /* Bordas arredondadas para os links */
     transition: background-color 0.3s; /* Transição suave para a mudança de cor */
     text-decoration: none;
 }
@@ -42,9 +44,6 @@ nav a:hover {
 }
 
 
-main {
-    text-align: center;
-}
 main h2 {
     text-align: center; /* Centraliza o texto do h2 */
 }
@@ -129,10 +128,13 @@ footer {
 h2 {
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
 }
+
 .form {
     margin: 10px;
+    text-align: left; /* Alinha o texto à esquerda para todos os inputs e labels */
     margin-bottom: 0;
 }
+
 .negrito {
     font-weight: bold;
 }

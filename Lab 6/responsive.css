@@ -21,14 +21,7 @@
         padding: 10px;
         width: 100%; /* Garante que todos os elementos filhos ocupem 100% da largura */
     }
-    .formularios nav{
-        height: 100px;
-        width: 100%; /* Garante que o nav ocupe a largura total */
-       
-    }
-    .formularios nav a {
-        padding: 18px; /* Adiciona espaçamento interno nos links */
-    }
+
     * {
         box-sizing: border-box;
         padding: 0;
@@ -43,8 +36,7 @@
 
     nav {
         grid-area: menu;
-        font-size: 1.0rem; /* Aumente o tamanho da fonte aqui */
-
+        font-size: 0.5rem; /* Aumente o tamanho da fonte aqui */
     }
 
     main {
@@ -64,37 +56,39 @@
 
     }
 } 
-@media (orientation:landscape) { 
+@media (orientation: landscape) { 
     body {
         display: grid;
         width: 100vw;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 25vw 14vw 1fr 0 10vw;
+        grid-template-rows: 25vw auto 1fr auto 10vw;
         grid-template-areas:
         'header'
         'menu'
         'main'
         'aside'
         'footer';
-        gap: 70px;
+        gap: 20px; /* Reduzido para melhor visualização em telas menores */
         padding: 10px;
     }
 
     body>* {
         text-align: center;
-        font-size: 30px;
+        font-size: 1.5rem; /* Ajustado para tamanhos menores de tela */
         padding: 10px;
-        width: 100%; /* Garante que todos os elementos filhos ocupem 100% da largura */
+        width: 100%;
     }
-    .formularios nav{
-        height: 100px;
-        width: 100%; /* Garante que o nav ocupe a largura total */
-       
+
+    .formularios nav {
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        width: 100%; 
     }
+
     .formularios nav a {
-        padding: 18px; /* Adiciona espaçamento interno nos links */
+        padding: 10px; /* Reduzido para evitar que os links fiquem muito grandes */
     }
+
     * {
         box-sizing: border-box;
         padding: 0;
@@ -104,29 +98,27 @@
     header {
         grid-area: header;
         text-align: center;
-        font-size: 1.4rem; /* Aumente o tamanho da fonte aqui */
+        font-size: 1.8rem; /* Ajustado para melhor legibilidade */
     }
 
     nav {
         grid-area: menu;
-        font-size: 1.0rem; /* Aumente o tamanho da fonte aqui */
-
+        font-size: 1rem; /* Ajustado para visualização em dispositivos menores */
     }
 
     main {
-        grid-area: main;  
-        width: 100%; /* Garante que o main ocupe a largura total */  
+        grid-area: main;
+        width: 100%;
     }
 
     aside {
         grid-area: aside;
-        background-color: #8f409585;
-        width: 100%; /* Garante que o aside ocupe a largura total */
+        background-color: rgba(143, 64, 149, 0.52); /* Cor com transparência */
+        width: 100%;
     }
 
     footer {
         grid-area: footer;
-        font-size: 1.4rem; /* Aumente o tamanho da fonte aqui */
-
+        font-size: 1.4rem; 
     }
- }
+}
