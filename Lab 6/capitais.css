@@ -300,3 +300,18 @@ b {
 .foto-transicao:hover {
     transform: scale(1.05);
 }
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Começa fora da tela à esquerda */
+        opacity: 0; /* Começa invisível */
+    }
+    100% {
+        transform: translateX(0); /* Termina na posição original */
+        opacity: 1; /* Termina visível */
+    }
+}
+
+h1 {
+    animation: slideIn 1s ease-in-out; /* A animação dura 1 segundo */
+}
