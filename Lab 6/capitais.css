@@ -257,3 +257,46 @@ article.parallax {
 b {
     color: purple;
 }
+
+.galeria {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.foto-bloco {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.foto-transicao,foto-efeito,.foto-transformacao img {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.foto-efeito:hover {
+    filter: brightness(0.7);
+}
+
+.foto-transformacao {
+    transform: rotate(10deg);
+}
+
+.foto-transicao:hover {
+    transform: scale(1.05);
+}
