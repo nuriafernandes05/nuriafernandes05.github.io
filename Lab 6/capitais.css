@@ -209,7 +209,7 @@ section div {
     overflow: hidden;
 }
 .parallax-container {
-    background-image: url('images/beach-6354498_1280.jpg'); /* Insira o caminho para a sua imagem */
+    background-image: url('images/parallax.jpg'); /* Insira o caminho para a sua imagem */
     background-attachment: fixed; /* Isso cria o efeito parallax */
     background-position: center;
     background-repeat: no-repeat;
@@ -246,7 +246,7 @@ div {
 }
 
 article.parallax {
-    background-image: url("https://cdn.pixabay.com/photo/2017/06/29/21/36/beach-2456298_1280.jpg"); /* Imagem de exemplo */
+    background-image: url("https://media.istockphoto.com/id/1952253409/pt/foto/skyline-paris.jpg?s=1024x1024&w=is&k=20&c=gztd8N_3F-lqMAc1cBCmByLRkGrYWskAKAv2LU7lsdE="); /* Imagem de exemplo */
     min-height: 400px; /* Ajuste a altura conforme necessário */
     background-attachment: fixed; /* Isso cria o efeito parallax */
     background-position: center;
