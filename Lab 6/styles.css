@@ -314,3 +314,18 @@ h3 {
 .poema p {
     margin-bottom: 20px; /* Espaço entre as estrofes */
 }
+
+.menu ul li a i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+/* Esconde o botão do menu (hamburger) no layout normal */
+.menu-toggle {
+    display: none;
+    background: #4a1b4d64;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}

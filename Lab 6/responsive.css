@@ -31,3 +31,33 @@
         grid-template-columns: repeat(5, 1fr);
     }
 }
+/* Media query para telas estreitas */
+@media (max-width: 600px) {
+    /* Esconde o menu padrão e mostra o botão do dropdown */
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .menu ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .menu ul li a {
+        display: block;
+        padding: 15px;
+    }
+
+    /* Mostra o botão para abrir o menu (hamburger) */
+    .menu-toggle {
+        display: block;
+        width: 100%;
+    }
+
+    /* Quando o menu está ativo (dropdown aberto) */
+    .menu.open ul {
+        display: flex;
+    }
+}
