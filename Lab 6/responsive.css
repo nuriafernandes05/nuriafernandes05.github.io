@@ -1,124 +1,33 @@
-@media(max-width:600px) {   /*Para TELEMÓVEL*/
+@media (max-width: 480px) {
     body {
-        display: grid;
-        width: 100vw;
-        height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 25vw 14vw 1fr 0 10vw;
-        grid-template-areas:
-        'header'
-        'menu'
-        'main'
-        'aside'
-        'footer';
-        gap: 70px;
-        padding: 10px;
     }
-
-    body>* {
-        text-align: center;
-        font-size: 30px;
-        padding: 10px;
-        width: 100%; /* Garante que todos os elementos filhos ocupem 100% da largura */
-    }
-
-    * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-
+    
     header {
-        grid-area: header;
-        text-align: center;
-        font-size: 1.4rem; /* Aumente o tamanho da fonte aqui */
+        font-size: 1.5em; 
     }
+}
 
-    nav {
-        grid-area: menu;
-        font-size: 0.5rem; /* Aumente o tamanho da fonte aqui */
-    }
-
-    main {
-        grid-area: main;  
-        width: 100%; /* Garante que o main ocupe a largura total */  
-    }
-
-    aside {
-        grid-area: aside;
-        background-color: #8f409585;
-        width: 100%; /* Garante que o aside ocupe a largura total */
-    }
-
-    footer {
-        grid-area: footer;
-        font-size: 1.4rem; /* Aumente o tamanho da fonte aqui */
-
-    }
-} 
-@media (orientation: landscape) { 
+@media (min-width: 481px) and (max-width: 767px) {
     body {
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 25vw auto 1fr auto 10vw;
-        grid-template-areas:
-        'header'
-        'menu'
-        'main'
-        'aside'
-        'footer';
-        gap: 20px; /* Reduzido para melhor visualização em telas menores */
-        padding: 10px;
+        grid-template-columns: 1fr 1fr; 
     }
+}
 
-    body>* {
-        text-align: center;
-        font-size: 1.5rem; /* Ajustado para tamanhos menores de tela */
-        padding: 10px;
-        width: 100%;
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr; 
     }
+}
 
-    .formularios nav {
-        height: auto; /* Altura automática para se ajustar ao conteúdo */
-        width: 100%; 
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
     }
+}
 
-    .formularios nav a {
-        padding: 10px; /* Reduzido para evitar que os links fiquem muito grandes */
-    }
-
-    * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-
-    header {
-        grid-area: header;
-        text-align: center;
-        font-size: 1.8rem; /* Ajustado para melhor legibilidade */
-    }
-
-    nav {
-        grid-area: menu;
-        font-size: 1rem; /* Ajustado para visualização em dispositivos menores */
-    }
-
-    main {
-        grid-area: main;
-        width: 100%;
-    }
-
-    aside {
-        grid-area: aside;
-        background-color: rgba(143, 64, 149, 0.52); /* Cor com transparência */
-        width: 100%;
-    }
-
-    footer {
-        grid-area: footer;
-        font-size: 1.4rem; 
+@media (min-width: 1441px) {
+    body {
+        grid-template-columns: repeat(5, 1fr);
     }
 }

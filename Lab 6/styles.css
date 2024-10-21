@@ -9,6 +9,8 @@ header {
     background-color: #8f409585;
     text-align: center;
     height: 100px;
+    margin-bottom: 10px;
+    justify-content: center; /* Centraliza horizontalmente */
 
 }
 
@@ -19,7 +21,7 @@ nav {
     justify-content: space-around; /* Distribui os links uniformemente */
     padding: 10px 20px; /* Espaçamento vertical do nav */
     font-size: 1.2rem; /* Aumente o tamanho da fonte aqui */
-    height: 100%;
+
 }
 
 nav a {
@@ -43,10 +45,10 @@ nav a:hover {
     color: #4a1b4d; /* Mantém a cor do texto ao passar o mouse */
 }
 
-
 main h2 {
     text-align: center; /* Centraliza o texto do h2 */
 }
+
 footer {
 
     background-color: #4a1b4d64;
@@ -56,6 +58,7 @@ footer {
     gap: 10px; /* Espaço entre os botões */
     margin-top: 10px;
 }
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -71,11 +74,13 @@ footer {
     display: inline-block;
     margin: 0 5px; /* Ajuste de espaçamento horizontal entre as imagens */
 }
+
 #fotografias h3, #video h3, #poema h3 {
     font-size: 24px;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
 .multimedia {
     display: inline-block;
     margin: 10px;
@@ -85,8 +90,7 @@ footer {
     background-color: rgb(241, 213, 237);
     color: purple;
     text-align: center;
-    width: 300px;
-    height: 100px;
+  
 }
 
 /*As fotos da multimedia esta no meio*/
@@ -106,31 +110,39 @@ footer {
     height: auto; /* Mantém a proporção da imagem */
     cursor: zoom-in;
 }
+
 .multimedia a {
     cursor: zoom-in; /* Altera o cursor para zoom-in ao passar sobre o link */
 }
+
 .fotografias-multimedia {
     background-color: #8f409585;
-    height: 240px;
     margin-bottom: 35px;
 }
+
 .video-multimedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #8f409585;
-    height: 3794x;
     margin-bottom: 35px;
+    padding: 20px;
+    text-align: center;
 }
+
 .poema-multimedia {
     text-align: center;
     background-color: #8f409585;
-    height: 3794x;
     margin-bottom: 35px;
 }
+
 h2 {
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
 }
 
 .form {
-    margin: 10px;
+    margin-left: 0;
     text-align: left; /* Alinha o texto à esquerda para todos os inputs e labels */
     margin-bottom: 0;
 }
@@ -138,6 +150,14 @@ h2 {
 .negrito {
     font-weight: bold;
 }
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de largura igual */
+    gap: 20px; /* Espaçamento entre as divs */
+    justify-items: center; /* Centraliza as divs no eixo horizontal */
+    margin: 20px;
+}
+
 .pontosinteresse {
     margin: 10px;
     padding: 20px;
@@ -151,9 +171,11 @@ h2 {
     margin-right: auto;
  
 }
+
 .pontosinteresse {
     text-align: center; /* Centraliza o texto abaixo de cada imagem */
 }
+
 .Restaurantes {
     display: inline-block;
     margin: 10px;
@@ -169,6 +191,7 @@ h2 {
     font-size: 16px;
 
 }
+
 .Restaurantes ul {
     font-size: 200%; /* Tamanho da fonte do elemento da lista é o dobro do tamanho do pai */
 }
@@ -176,9 +199,11 @@ h2 {
 .Restaurantes li {
     font-size: inherit; /* Mantém o tamanho da fonte do elemento pai */
 }
+
 .Restaurantes h3 {
     color: purple
 }
+
 .Monumentos {
     display: inline-block;
     margin: 10px;
@@ -222,7 +247,6 @@ li:nth-child(odd) {background-color:  rgb(255, 224, 250);}
 }
 
 .Tabela {
-   
     margin: 10px;
     padding: 20px;
     border: 100px;
@@ -233,7 +257,6 @@ li:nth-child(odd) {background-color:  rgb(255, 224, 250);}
     width: 670px; 
     margin-left: auto;
     margin-right: auto;
-
 }
 .Tabela h3 {
     color: purple
@@ -270,12 +293,10 @@ p {
     margin-bottom: 30px; /* Espaçamento entre as divs de cada imagem */
 }
 
-
 /* Para ajustar o espaçamento entre títulos e outros elementos */
 h3 {
     margin-bottom: 20px; /* Espaçamento entre o título e o conteúdo seguinte */
 }
-
 
 .poema {
     font-family: 'Georgia', serif; /* Fonte clássica */
