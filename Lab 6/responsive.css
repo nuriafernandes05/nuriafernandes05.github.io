@@ -19,9 +19,11 @@
         text-align: center;
         font-size: 30px;
         padding: 10px;
+        width: 100%; /* Garante que todos os elementos filhos ocupem 100% da largura */
     }
     .formularios nav{
         height: 100px;
+        width: 100%; /* Garante que o nav ocupe a largura total */
        
     }
     .formularios nav a {
@@ -46,12 +48,14 @@
     }
 
     main {
-        grid-area: main;    
+        grid-area: main;  
+        width: 100%; /* Garante que o main ocupe a largura total */  
     }
 
     aside {
         grid-area: aside;
         background-color: #8f409585;
+        width: 100%; /* Garante que o aside ocupe a largura total */
     }
 
     footer {
@@ -59,4 +63,7 @@
         font-size: 1.4rem; /* Aumente o tamanho da fonte aqui */
 
     }
-}
+} 
+@media (orientation:landscape) { 
+    
+ }
