@@ -16,13 +16,13 @@ nav {
     text-decoration: none;
     display: flex; /* Alinha os links horizontalmente */
     justify-content: space-around; /* Distribui os links uniformemente */
-    padding: 10px 0; /* Espaçamento vertical do nav */
+    padding: 10px 20px; /* Espaçamento vertical do nav */
     font-size: 1.2rem; /* Aumente o tamanho da fonte aqui */
 }
 
 nav a {
     color: #4a1b4d; /* Cor padrão para links */
-    padding: 10px 15px; /* Espaço interno para o link */
+    padding: 20px 15px; /* Espaço interno para o link */
     border-radius: 5px; /* Bordas arredondadas para os links */
     transition: background-color 0.3s; /* Transição suave para a mudança de cor */
     text-decoration: none;
@@ -137,7 +137,6 @@ h2 {
     font-weight: bold;
 }
 .pontosinteresse {
-    display: inline-block;
     margin: 10px;
     padding: 20px;
     border: 100px;
@@ -146,7 +145,9 @@ h2 {
     color: purple;
     text-align: center;
     width: 670px;
-    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+ 
 }
 .pontosinteresse {
     text-align: center; /* Centraliza o texto abaixo de cada imagem */
@@ -161,7 +162,8 @@ h2 {
     color: black;
     text-align: center;
     width: 670px;
-    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
 
 }
@@ -185,7 +187,8 @@ h2 {
     color: black;
     text-align: center;
     width: 670px;
-    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
 }
 .Monumentos ul {
@@ -212,11 +215,12 @@ li:nth-child(odd) {background-color:  rgb(255, 224, 250);}
     color: purple;
     text-align: center;
     width: 624px;
-    height: 428px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Tabela {
-    display: inline-block;
+   
     margin: 10px;
     padding: 20px;
     border: 100px;
@@ -224,8 +228,9 @@ li:nth-child(odd) {background-color:  rgb(255, 224, 250);}
     background-color: rgb(241, 213, 237);
     color: black;
     text-align: center;
-    width: 670px;
-    height: 582px;
+    width: 670px; 
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .Tabela h3 {

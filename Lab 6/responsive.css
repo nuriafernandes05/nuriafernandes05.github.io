@@ -65,5 +65,68 @@
     }
 } 
 @media (orientation:landscape) { 
-    
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25vw 14vw 1fr 0 10vw;
+        grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'aside'
+        'footer';
+        gap: 70px;
+        padding: 10px;
+    }
+
+    body>* {
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+        width: 100%; /* Garante que todos os elementos filhos ocupem 100% da largura */
+    }
+    .formularios nav{
+        height: 100px;
+        width: 100%; /* Garante que o nav ocupe a largura total */
+       
+    }
+    .formularios nav a {
+        padding: 18px; /* Adiciona espaçamento interno nos links */
+    }
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        grid-area: header;
+        text-align: center;
+        font-size: 1.4rem; /* Aumente o tamanho da fonte aqui */
+    }
+
+    nav {
+        grid-area: menu;
+        font-size: 1.0rem; /* Aumente o tamanho da fonte aqui */
+
+    }
+
+    main {
+        grid-area: main;  
+        width: 100%; /* Garante que o main ocupe a largura total */  
+    }
+
+    aside {
+        grid-area: aside;
+        background-color: #8f409585;
+        width: 100%; /* Garante que o aside ocupe a largura total */
+    }
+
+    footer {
+        grid-area: footer;
+        font-size: 1.4rem; /* Aumente o tamanho da fonte aqui */
+
+    }
  }
