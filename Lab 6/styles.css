@@ -18,19 +18,13 @@ nav {
     background-color: #4a1b4d64; /* Cor de fundo do nav */
     text-decoration: none;
     display: flex; /* Alinha os links horizontalmente */
-    justify-content: space-around; /* Distribui os links uniformemente */
+    justify-content: center; /* Distribui os links uniformemente */
     padding: 10px 20px; /* Espaçamento vertical do nav */
     font-size: 1.2rem; /* Aumente o tamanho da fonte aqui */
-
+    text-align: center;
 }
 
-nav a {
-    color: #4a1b4d; /* Cor padrão para links */
-    padding: 20px 15px; /* Espaço interno para o link */
-    border-radius: auto; /* Bordas arredondadas para os links */
-    transition: background-color 0.3s; /* Transição suave para a mudança de cor */
-    text-decoration: none;
-}
+
 
 nav a:link {
     color: #250e27; /* Cor para links não visitados */
