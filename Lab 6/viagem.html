@@ -19,7 +19,6 @@
 
         </header>
       
-
         <nav class="menu">
             <button class="menu-toggle">☰ Menu</button>
             <ul>
@@ -34,6 +33,13 @@
             </ul>
           
         </nav>
+        
+        <script>
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                const menu = document.querySelector('.menu');
+                menu.classList.toggle('open'); // Alterna a classe "open"
+            });
+        </script>
   
         <form method="get" action="https://postman-echo.com/get">
 
