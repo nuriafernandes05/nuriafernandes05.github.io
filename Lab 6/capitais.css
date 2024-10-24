@@ -25,9 +25,7 @@ nav a {
     color: white;
 }
 
-nav a:last-child {
-    background-color: #723a80; 
-}
+
 
 nav a:link {
     color: white;
